@@ -1,12 +1,3 @@
-const LeadershipData = [
-  {
-    name: 'Derrick',
-    score: 90
-  },
-  {
-    name: 'Joshua',
-    score: 20
-  }
-];
+const LeadershipData = [];
 
 export default LeadershipData;
