@@ -1,13 +1,15 @@
-import LeadershipData from './LeadershipData.js';
 import displayData from './displayData.js';
 
 const display = document.querySelector('.names-scores');
-const refresh = document.getElementById('refresh');
+const refresh = document.getElementById('refresh-form"');
 
 const refreshDisplay = () => {
-  refresh.addEventListener('click', () => {
+  if (!refresh) return;
+
+  refresh.addEventListener('submit', (e) => {
+    e.preventDefault();
     display.innerHTML = '';
-    displayData(LeadershipData);
+    displayData();
   });
 };
 
