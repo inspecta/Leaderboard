@@ -15,11 +15,13 @@ main {
 .recent-scores {
   float: left;
   width: 40%;
+  display: none;
 }
 
 .add-score {
   float: right;
   width: 40%;
+  display: none;
 }
 
 .names-scores {
@@ -46,9 +48,17 @@ main {
 }
 
 #refresh,
-#submit {
+#submit,
+#add-game {
   height: 2em;
   box-shadow: 3px 3px 0 0 #000;
+}
+
+.add-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
 }
 
 #refresh :hover {
@@ -68,4 +78,8 @@ input {
 
 #submit {
   width: 5em;
+}
+
+#add-game {
+  width: 10em;
 }
