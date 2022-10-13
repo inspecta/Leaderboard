@@ -10,11 +10,6 @@
 - Frameworks - Webpack
 - Technologies used - VS Code, Chrome
 
-## Live Demo
-
-[Live Demo Link]([https://livedemo.com](https://inspecta.github.io/Leadership/))
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
