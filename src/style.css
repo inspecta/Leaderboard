@@ -1,11 +1,19 @@
 *,
 html {
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: monospace;
 }
 
 label {
   display: none;
+}
+
+body {
+  height: auto;
+  box-shadow: 2px 2px 2px 2px #000;
+  border-radius: 5px;
+  width: 90%;
+  margin: 20px auto 10px auto;
 }
 
 main {
@@ -111,12 +119,6 @@ input::placeholder {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    height: auto;
-    box-shadow: 2px 2px 2px 2px #000;
-    border-radius: 5px;
-  }
-
   .main {
     padding: 40px;
     width: 100%;
