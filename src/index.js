@@ -7,6 +7,7 @@ import saveScore from './modules/saveScore.js';
 const addScore = document.querySelector('.add-score');
 const displayScores = document.querySelector('.recent-scores');
 const gameForm = document.getElementById('form-name-game');
+const newGameContainer = document.getElementById('add-new-game');
 const form = document.getElementById('form');
 
 window.addEventListener('load', () => {
@@ -20,7 +21,7 @@ window.addEventListener('load', () => {
   });
 
   if (localStorage.getItem('game')) {
-    gameForm.style.display = 'none';
+    newGameContainer.style.display = 'none';
     addScore.style.display = 'block';
     displayScores.style.display = 'block';
   }
@@ -35,7 +36,7 @@ window.addEventListener('load', () => {
       // Store game name into storage
       if (gameName) {
         localStorage.setItem('game', gameName);
-        gameForm.style.display = 'none';
+        newGameContainer.style.display = 'none';
         addScore.style.display = 'block';
         displayScores.style.display = 'block';
       }
