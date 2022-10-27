@@ -1,8 +1,10 @@
+@import url("http://fonts.cdnfonts.com/css/nunito");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Circular-Loom", monospace;
+  font-family: "Nunito", sans-serif;
 }
 
 :root {
