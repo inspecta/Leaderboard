@@ -6,58 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard Scores</title>
   <script defer src="main.js"></script></head>
-  <main class="main">
-    <h1>Leaderboard</h1>
+  <body>
+    <header>
+      <h1 class="heading">Leaderboard</h1>
+    </header>
+    <main class="main">
+      <section id="add-new-game">
+        <form id="form-name-game">
+          <div class="add-game">
+            <p>To start playing, enter your game name.</p>
+            <input
+              type="text"
+              name="game-name"
+              id="game-name"
+              placeholder="Enter game name"
+              required
+            />
+            <button type="submit" id="add-game">Get Stated</button>
+          </div>
+        </form>
+      </section>
 
-    <section id="add-new-game">
-      <form id="form-name-game">
-        <div class="add-game">
-          <p>To start playing, enter your game name.</p>
-          <input
-            type="text"
-            name="game-name"
-            id="game-name"
-            placeholder="Enter game name"
-            required
-          />
-          <button type="submit" id="add-game">Get Stated</button>
+      <section class="add-score">
+        <h2 class="score-txt">Add your score</h2>
+        <div class="add-score-2">
+          <form id="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+            <label for="score">Score</label>
+            <input
+              type="number"
+              name="score"
+              min="0"
+              max="100"
+              id="score"
+              placeholder="Your score"
+              required
+            />
+            <button type="submit" id="submit">Submit</button>
+          </form>
         </div>
-      </form>
-    </section>
+      </section>
 
-    <section class="add-score">
-      <h2 class="score-txt">Add your score</h2>
-      <div class="add-score-2">
-        <form id="form">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Your name"
-            required
-          />
-          <label for="score">Score</label>
-          <input
-            type="number"
-            name="score"
-            id="score"
-            placeholder="Your score"
-            required
-          />
-          <button type="submit" id="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="recent-scores">
-      <div class="head-scores">
-        <h2>Recent scores</h2>
-        <form id="refresh-form">
-          <button type="submit" id="refresh">Refresh</button>
-        </form>
-      </div>
-      <div class="names-scores"></div>
-    </section>
-  </main>
+      <section class="recent-scores">
+        <div class="head-scores">
+          <h2>Recent scores</h2>
+          <form id="refresh-form">
+            <button type="submit" id="refresh">Refresh</button>
+          </form>
+        </div>
+        <div class="names-scores"></div>
+      </section>
+    </main>
+    <footer>
+      <p>Derrick &copy 2022</p>
+    </footer>
+  </body>
 </html>
