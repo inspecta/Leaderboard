@@ -19,9 +19,8 @@ body {
   box-shadow: 2px 2px 2px 2px var(--color-1);
   border-radius: 5px;
   width: 90%;
-  height: auto;
   margin: 20px auto 10px auto;
-  background: #eeeeee;
+  background: #eee;
 }
 
 main {
