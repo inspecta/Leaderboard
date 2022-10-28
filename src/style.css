@@ -1,10 +1,14 @@
-@import url("http://fonts.cdnfonts.com/css/nunito");
+@import url("https://fonts.cdnfonts.com/css/nunito");
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+}
+
+html {
+  background: #fff;
 }
 
 :root {
@@ -92,6 +96,7 @@ header {
   box-shadow: 3px 3px 0 0 var(--color-2);
   font-size: 0.9em;
   color: var(--color-2);
+  border-radius: 5px;
 }
 
 .add-game {
