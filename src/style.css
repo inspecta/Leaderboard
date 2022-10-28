@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/nunito");
+@import url("https://fonts.cdnfonts.com/css/nunito");
 
 *,
 *::before,
@@ -7,7 +7,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-html{
+html {
   background: #fff;
 }
 
