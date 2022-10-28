@@ -7,6 +7,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+html{
+  background: #fff;
+}
+
 :root {
   --color-1: #929aab;
   --color-2: #393e46;
@@ -92,6 +96,7 @@ header {
   box-shadow: 3px 3px 0 0 var(--color-2);
   font-size: 0.9em;
   color: var(--color-2);
+  border-radius: 5px;
 }
 
 .add-game {
